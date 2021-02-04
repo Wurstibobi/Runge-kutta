@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 #All variables in Au / day units
+#Masses in solar masses.
 
 g = 2.959*10**-4
 m = np.array([1.47,9.2*0.0009543,0.0009543*8.3,7*0.0009543])
@@ -17,7 +18,7 @@ v1 = np.array([0,(g*m[0]/r1[0])**(1/2)])
 v2 = np.array([0,-1.0001*(g*m[0]/-r2[0])**(1/2)])
 v3 = np.array([0,0.9999*(g*m[0]/r3[0])**(1/2)])
 
-# Create a large data vector that holds the positions and velocities of all objects at all times
+# Create a large 'State' data vector that holds the positions and velocities of all objects at aný given time
 s = np.array([r0[0],r0[1],r1[0],r1[1],r2[0],r2[1],r3[0],r3[1],v0[0],v0[1],v1[0],v1[1],v2[0],v2[1],v3[0],v3[1]])
 
 
